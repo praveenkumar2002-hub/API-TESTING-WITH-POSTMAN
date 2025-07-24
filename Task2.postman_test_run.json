@@ -1,0 +1,170 @@
+{
+	"id": "25cbe917-af22-41bc-921d-49c2986465cc",
+	"name": "Task2",
+	"timestamp": "2025-05-30T06:14:47.009Z",
+	"collection_id": "45110288-dc22b31f-afcf-483c-8766-5083325e1c76",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 9,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-05-30T06:14:40.260Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "c573baf8-0ce0-439c-bdcb-4495e7e09651",
+			"name": "data retrivel",
+			"url": "https://jsonplaceholder.typicode.com/posts/1",
+			"time": 230,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response has required fields": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has required fields": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				230
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response has required fields": true
+				}
+			]
+		},
+		{
+			"id": "fb026472-6258-4188-90e1-3640a2216f7b",
+			"name": "data creation",
+			"url": "https://jsonplaceholder.typicode.com/posts",
+			"time": 728,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response contains created resource": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains created resource": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				728
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response contains created resource": true
+				}
+			]
+		},
+		{
+			"id": "d381a665-788c-4819-b0b8-50704ada9b9a",
+			"name": "login",
+			"url": "https://dummyjson.com/auth/login",
+			"time": 3962,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 for successful login": true,
+				"Tokens are returned": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 for successful login": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Tokens are returned": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3962
+			],
+			"allTests": [
+				{
+					"Status code is 200 for successful login": true,
+					"Tokens are returned": true
+				}
+			]
+		},
+		{
+			"id": "9f44bb18-98a5-41d4-9784-54669e30a987",
+			"name": "login info",
+			"url": "https://dummyjson.com/auth/me?Key= Authorization&Value= Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NDg1ODU2ODgsImV4cCI6MTc0ODU4NzQ4OH0.HSJIzmAqjvjUYPzpO5ndpuLxHbRu5XyjCus2vUYaPos",
+			"time": 305,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains user data": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains user data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				305
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains user data": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5225,
+	"collection": {
+		"requests": [
+			{
+				"id": "c573baf8-0ce0-439c-bdcb-4495e7e09651",
+				"method": "GET"
+			},
+			{
+				"id": "fb026472-6258-4188-90e1-3640a2216f7b",
+				"method": "POST"
+			},
+			{
+				"id": "d381a665-788c-4819-b0b8-50704ada9b9a",
+				"method": "POST"
+			},
+			{
+				"id": "9f44bb18-98a5-41d4-9784-54669e30a987",
+				"method": "GET"
+			}
+		]
+	}
+}
